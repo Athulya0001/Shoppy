@@ -15,7 +15,8 @@
         <div class="flex justify-between items-center p-1">
             <div class="flex items-center space-x-4 sm:justify-center">
                 <h1 class="text-2xl font-bold text-blue-900">Shoppy</h1>
-                <input type="text" placeholder="search for items" id="search" class="px-3 rounded-md bg-blue-200 border border-none hidden md:flex">
+                <input type="text" placeholder="search for items" id="search"
+                    class="px-3 rounded-md bg-blue-200 border border-none hidden md:flex">
             </div>
             <div class="menu-section hidden md:flex justify-evenly">
                 <div class="menu-section hidden md:flex justify-evenly">
@@ -41,20 +42,20 @@
                         </a>
                     </div>
                 </div>
-                
+
             </div>
             <div class="flex space-x-3">
-            <div class="md:hidden">
-                <button id="menu-toggle" class="text-white">
-                    <img src="./image/icons8-menu-26.png" alt="Menu" class="w-6 h-6">
-                </button>
-            </div>
-            <div class="md:hidden">
-                <img src="./image/icons8-dark-theme-26 (1).png" alt="" class="w-6 h-6">
-            </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white">
+                        <img src="./image/icons8-menu-26.png" alt="Menu" class="w-6 h-6">
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <img src="./image/icons8-dark-theme-26 (1).png" alt="" class="w-6 h-6">
+                </div>
             </div>
         </div>
-        
+
         <div id="mobile-menu" class="md:hidden mt-4 space-y-4 hidden">
             <ul class="flex flex-col items-end">
                 <li class="flex items-center space-x-2 cursor-pointer hover:text-blue-500">
@@ -73,35 +74,65 @@
         </div>
     </nav>
 
+    <!-- Collection -->
+    <section class="my-2 bg-white">
+        <div class="flex mx-auto justify-evenly md:w-3/5 items-center bg-white sm:w-full">
+            <span class="text-xs cursor-pointer">Latest</span>
+            <select name="brand" id="brandName" class="bg-white border border-none text-xs cursor-pointer">
+                <option value="Brands">Brands</option>
+                <option value="GUCCI">GUCCI</option>
+                <option value="CHANEL">Chanel</option>
+                <option value="ZARA">ZARA</option>
+                <option value="DIOR">Dior</option>
+                <option value="Balenciaga">Balenciaga</option>
+                <option value="more" class="text-blue-500">more...</option>
+            </select>
+            <span class="text-xs cursor-pointer">Men</span>
+            <span class="text-xs cursor-pointer">Women</span>
+            <span class="text-xs cursor-pointer">Girls</span>
+            <span class="text-xs cursor-pointer">Boys</span>
+        </div>
+    </section>
+
     <!-- Carousel -->
     <section class="my-3">
-        <div class="relative w-full h-[50vh] overflow-hidden">
+        <div class="relative w-full h-[70vh] overflow-hidden">
             <!-- Carousel Container -->
             <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
-              <!-- Slide 1 -->
-              <div class="w-full flex-shrink-0 h-[50vh] bg-cover bg-center" style="background-image: url(./image/zara-red.jpg);">
-              </div>
-              <!-- Slide 2 -->
-              <div class="w-full flex-shrink-0 h-[50vh] bg-cover bg-center" style="background-image: url(./image/mens-collection.jpg);">
-              </div>
-              <!-- Slide 3 -->
-              <div class="w-full flex-shrink-0 h-[50vh] bg-cover bg-center" style="background-image: url(./image/womens-collection.jpg);">
-              </div>
+                <!-- Slide 1 -->
+                <div class="w-full flex-shrink-0 h-[70vh] bg-cover bg-center relative"
+                    style="background-image: url(./image/zara-red.jpg);">
+                    <span class="text-2xl font-bolder bg-white border rounded-md relative top-7 left-8">Choose your Brand</span>
+                    <h1 class="text-white text-7xl font-serif fixed bottom-6 right-6">ZARA</h1>
+                </div>
+                <!-- Slide 2 -->
+                <div class="w-full flex-shrink-0 h-[70vh] bg-cover bg-center relative"
+                    style="background-image: url(./image/mens-collection.jpg);">
+                    <h1 class="text-white text-6xl font-serif absolute bottom-6 left-4">GUCCI</h1>
+                </div>
+                <!-- Slide 3 -->
+                <div class="w-full flex-shrink-0 h-[70vh] bg-cover bg-center relative"
+                    style="background-image: url(./image/DiaryHeroArticle_s61-agenda-issue03-s61-kids-campaign_001_Default.jpg);">
+                    <h1 class="text-white text-6xl font-serif absolute bottom-6 right-4">DIOR</h1>
+                </div>
+                <!-- Slide 4 -->
+                <div class="w-full flex-shrink-0 h-[70vh] bg-cover bg-center relative"
+                        style="background-image: url(./image/depositphotos_239854214-stock-photo-three-beautiful-smiling-hipster-girls.jpg);">
+                        <h1 class="text-white text-6xl font-serif absolute top-6 left-4">CHANEL</h1>
+                </div>
             </div>
-        
+
             <!-- Navigation Buttons -->
             <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 text-5xl">
                 &#8249;
-              </button>
-              <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-5xl">
+            </button>
+            <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-5xl">
                 &#8250;
-              </button>
-              
-              
-          </div>
+            </button>
+        </div>
     </section>
 
-    
+
     <script src="script.js"></script>
 </body>
 

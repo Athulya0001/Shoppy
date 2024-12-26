@@ -26,7 +26,7 @@ const startAutoSlide = () => {
   autoSlideInterval = setInterval(() => {
     currentIndex = (currentIndex + 1) % totalSlides; 
     updateCarousel();
-  }, 7000);
+  }, 5000);
 };
 
 const stopAutoSlide = () => {

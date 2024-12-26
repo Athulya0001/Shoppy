@@ -1,6 +1,9 @@
 body {
-    background-color: rgb(237, 253, 253);
+    background-color: azure;
 }
 nav {
     background-color: rgb(226, 241, 255);
+}
+option {
+    font-size: 12px;
 }
