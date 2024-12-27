@@ -53,6 +53,10 @@
                 <div class="md:hidden">
                     <img src="./image/icons8-dark-theme-26 (1).png" alt="" class="w-6 h-6">
                 </div>
+                <div class="location flex justify-center items-center md:hidden">
+                    <img src="./image/icons8-location-14.png" alt="">
+                    <a href="#" class="flex justify-end">Add Location</a>
+                </div>
             </div>
         </div>
 
@@ -92,7 +96,7 @@
             <span class="text-xs cursor-pointer">Girls</span>
             <span class="text-xs cursor-pointer">Boys</span>
         </div>
-        <div class="location flex flex-col absolute right-6">
+        <div class="location flex flex-col absolute right-6 sm:hidden md:flex">
             <div class="flex">
                 <img src="./image/icons8-location-14.png" alt="location icon">
                 <span class="text-xs">Delivery Location</span>
@@ -109,7 +113,8 @@
                 <!-- Slide 1 -->
                 <div class="w-full flex-shrink-0 h-[70vh] bg-cover bg-center relative"
                     style="background-image: url(./image/zara-red.jpg);">
-                    <span class="text-2xl font-bolder bg-white border rounded-md relative top-7 left-8">Choose your Brand</span>
+                    <span class="text-2xl font-bolder bg-white border rounded-md relative top-7 left-8">Choose your
+                        Brand</span>
                     <h1 class="text-white text-7xl font-serif fixed bottom-6 right-6">ZARA</h1>
                 </div>
                 <!-- Slide 2 -->
@@ -124,9 +129,10 @@
                 </div>
                 <!-- Slide 4 -->
                 <div class="w-full flex-shrink-0 h-[70vh] bg-cover bg-center relative"
-                        style="background-image: url(./image/depositphotos_239854214-stock-photo-three-beautiful-smiling-hipster-girls.jpg);">
-                        <h1 class="text-white text-6xl font-serif absolute top-6 left-4">CHANEL</h1>
+                    style="background-image: url(./image/depositphotos_239854214-stock-photo-three-beautiful-smiling-hipster-girls.jpg);">
+                    <h1 class="text-white text-6xl font-serif absolute top-6 left-4">CHANEL</h1>
                 </div>
+            </div>
             </div>
 
             <!-- Navigation Buttons -->
@@ -139,6 +145,30 @@
         </div>
     </section>
 
+    <!-- Trending Collection section -->
+    <section class="trending-section flex flex-col justify-center items-center my-4">
+        <h2 class="text-3xl font-serif font-bold">Trending Collections</h2>
+        <br>
+        <div class="cards grid grid-cols-4 gap-5 w-3/4 my-3">
+            <div class="bg-white h-full">
+                <div class="flex m-2 h-2/3">
+                    <img src="./image/men9d.jpg" alt="mens outfit" class="h-full w-full">
+                </div>
+                <div>
+                    <h4 class="md:text-xs text-center text-bold">DIOR Brown Men's Outfit</h4>
+                </div>
+            </div>
+            <div class="bg-white h-full">
+                <div class="flex m-2 h-2/3">
+                    <img src="./image/women7c.jpg" alt="mens outfit" class="h-full w-full">
+                </div>
+                <div>
+                    <h4 class="md:text-xs text-center text-bold">CHANEL White Women's Outfit</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <script src="script.js"></script>
 </body>

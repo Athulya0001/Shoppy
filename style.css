@@ -17,3 +17,9 @@ option {
     font-size: 11px;
     text-decoration: underline;
 }
+.trending-section {
+    background-color: rgb(246, 246, 233);
+}
+.cards h4 {
+    font-size: 12px;
+}
