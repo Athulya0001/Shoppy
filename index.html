@@ -11,14 +11,14 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="text-blue-500 px-5">
-        <div class="flex justify-between items-center p-1">
+    <nav class="px-5">
+        <div class="flex justify-between items-center p-1 relative">
             <div class="flex items-center space-x-4 sm:justify-center">
                 <h1 class="text-2xl font-bold text-blue-900">Shoppy</h1>
                 <input type="text" placeholder="search for items" id="search"
                     class="px-3 rounded-md bg-blue-200 border border-none hidden md:flex">
             </div>
-            <div class="menu-section hidden md:flex justify-evenly">
+            <div class="menu-section hidden md:flex justify-evenly absolute right-2">
                 <div class="menu-section hidden md:flex justify-evenly">
                     <div class="flex space-x-4">
                         <a href="#" class="flex items-center space-x-2 cursor-pointer hover:text-blue-600">
@@ -56,7 +56,7 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="md:hidden mt-4 space-y-4 hidden">
+        <div id="mobile-menu" class="mobile-menu-section md:hidden mt-4 space-y-4 hidden">
             <ul class="flex flex-col items-end">
                 <li class="flex items-center space-x-2 cursor-pointer hover:text-blue-500">
                     <span>Home</span>
@@ -75,8 +75,8 @@
     </nav>
 
     <!-- Collection -->
-    <section class="my-2 bg-white">
-        <div class="flex mx-auto justify-evenly md:w-3/5 items-center bg-white sm:w-full">
+    <section class="my-2 bg-white flex">
+        <div class="flex mx-auto justify-evenly md:w-3/5 items-center bg-white sm:w-full py-2">
             <span class="text-xs cursor-pointer">Latest</span>
             <select name="brand" id="brandName" class="bg-white border border-none text-xs cursor-pointer">
                 <option value="Brands">Brands</option>
@@ -91,6 +91,13 @@
             <span class="text-xs cursor-pointer">Women</span>
             <span class="text-xs cursor-pointer">Girls</span>
             <span class="text-xs cursor-pointer">Boys</span>
+        </div>
+        <div class="location flex flex-col absolute right-6">
+            <div class="flex">
+                <img src="./image/icons8-location-14.png" alt="location icon">
+                <span class="text-xs">Delivery Location</span>
+            </div>
+            <a href="#" class="flex justify-end">Add Location</a>
         </div>
     </section>
 

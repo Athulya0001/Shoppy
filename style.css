@@ -1,9 +1,19 @@
 body {
-    background-color: azure;
+    background-color: rgb(234, 244, 244);
 }
 nav {
     background-color: rgb(226, 241, 255);
 }
 option {
     font-size: 12px;
+}
+.menu-section span {
+    font-size: 14px;
+}
+.mobile-menu-section span {
+    font-size: 12px;
+}
+.location a{
+    font-size: 11px;
+    text-decoration: underline;
 }
