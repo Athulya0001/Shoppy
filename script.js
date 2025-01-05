@@ -102,3 +102,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// trending collection section
+// localstorage
+
+function addCart(product) {
+  let cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+  
+  // Check if the product is already in the cart
+  const existingProduct = cartItems.find(item => item.name === product.name);
+  
+  if (existingProduct) {
+      // If the product already exists, increase the quantity by 1
+      existingProduct.quantity++;
+  } else {
+      // If the product is not in the cart, add it with quantity 1
+      product.quantity = 1;
+      cartItems.push(product);
+  }
+
+  // Save updated cart items to localStorage
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+}
