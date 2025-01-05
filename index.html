@@ -11,30 +11,40 @@
 
 <body class="bg-yellow-300">
     <!-- Navbar -->
-    <nav class="bg-gradient-to-r from-blue-900 via-violet-700 to-purple-500 shadow-lg fixed top-0 w-full z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <nav class="bg-gradient-to-r from-blue-900 via-yellow-700 via-violet-100 to-purple-500 shadow-lg fixed top-0 w-full z-50">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
             <!-- Logo -->
-            <a href="#" class="text-white font-bold text-xl tracking-wide">
+            <a href="#" class="text-white font-bold text-2xl tracking-wide">
         Shoppy<span class="text-yellow-300">Hub</span>
             </a>
     
             <!-- Menu Items -->
-            <div class="hidden md:flex space-x-8 text-white font-semibold">
-                <a href="#home" class="hover:text-yellow-300 transition duration-300">Home</a>
-                <a href="#about" class="hover:text-yellow-300 transition duration-300">About</a>
-                <div class="relative group">
-                    <button class="hover:text-yellow-300 transition duration-300">Categories</button>
+            <div class="menu hidden md:flex space-x-1 text-white font-semibold">
+                <a href="#collection" class="hover:text-yellow-300 transition duration-300 text-xs flex items-center justify-evenly border-r border-white px-2">Home
+                    <img src="./image/icons8-home-26.png" alt="home">
+                </a>
+                <a href="./cart.html" class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2" id="cart" >Cart
+                    <img src="./image/icons8-cart-24 (1).png" alt="cart">
+                </a>
+                <div class="relative group flex justify-center">
+                    <button class="hover:text-yellow-300 transition duration-300 text-xs flex items-center justify-center border-r border-white px-2">Categories
+                        <img src="./image/icons8-category-28.png" alt="category">
+                    </button>
                     <!-- Dropdown -->
                     <div
-                        class="absolute hidden group-hover:block bg-white text-black shadow-lg rounded-lg mt-2 py-2 w-40">
-                        <a href="#men" class="block px-4 py-2 hover:bg-gray-100">Men</a>
-                        <a href="#women" class="block px-4 py-2 hover:bg-gray-100">Women</a>
-                        <a href="#kids" class="block px-4 py-2 hover:bg-gray-100">Boys</a>
-                        <a href="#kids" class="block px-4 py-2 hover:bg-gray-100">Girls</a>
+                        class="absolute hidden group-hover:block bg-white text-black shadow-lg rounded-lg mt-5 py-1 w-25">
+                        <a href="#men" class="block px-4 py-2 hover:bg-gray-100 text-xs">Men</a>
+                        <a href="#women" class="block px-4 py-2 hover:bg-gray-100 text-xs">Women</a>
+                        <a href="#boys" class="block px-4 py-2 hover:bg-gray-100 text-xs">Boys</a>
+                        <a href="#girls" class="block px-4 py-2 hover:bg-gray-100 text-xs">Girls</a>
                     </div>
                 </div>
-                <a href="#contact" class="hover:text-yellow-300 transition duration-300">Contact</a>
-                <a href="#projects" class="hover:text-yellow-300 transition duration-300">Account</a>
+                <a href="#contact" class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2">Contact
+                    <img src="./image/icons8-contact-us-26.png" alt="cantact">
+                </a>
+                <a href="./login.html" class="hover:text-yellow-300 transition duration-300 text-xs flex items-center px-2">Account
+                    <img src="./image/icons8-user-32.png" alt="user">
+                </a>
 
             </div>
     
@@ -47,23 +57,19 @@
                             d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </button>
+                <div class="location flex justify-center items-center mt-2 md:mt-0 md:absolute md:right-6 flex md:hidden">
+                    <a href="#location">
+                    <img src="./image/icons8-location-14.png" alt="location icon" class="h-4 w-4 mr-2"></a>
+                </div>
             </div>
         </div>
     
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
-            <a href="#home" class="block px-4 py-2 text-black hover:bg-gray-100">Home</a>
-            <a href="#about" class="block px-4 py-2 text-black hover:bg-gray-100">About</a>
-            <a href="#projects" class="block px-4 py-2 text-black hover:bg-gray-100">Projects</a>
-            <div class="block px-4 py-2 text-black">
-                Categories
-                <div class="pl-4">
-                    <a href="#men" class="block py-2 hover:bg-gray-100">Men</a>
-                    <a href="#women" class="block py-2 hover:bg-gray-100">Women</a>
-                    <a href="#kids" class="block py-2 hover:bg-gray-100">Kids</a>
-                </div>
-            </div>
+            <a href="#collection" class="block px-4 py-2 text-black hover:bg-gray-100">Home</a>
+            <a href="./cart.html" class="block px-4 py-2 text-black hover:bg-gray-100">Cart</a>
             <a href="#contact" class="block px-4 py-2 text-black hover:bg-gray-100">Contact</a>
+            <a href="./login.html" class="block px-4 py-2 text-black hover:bg-gray-100">Account</a>
         </div>
     </nav>
 
