@@ -74,7 +74,7 @@
     </nav>
 
     <!-- Collection -->
-    <section class="bg-gray-50 border-t border-gray-200 mt-[65px] flex items-center justify-center">
+    <section class="bg-gray-50 border-t border-gray-200 mt-[45px] flex items-center justify-center" id="collection">
         <div class="flex mx-auto justify-evenly md:w-3/5 items-center bg-white sm:w-full py-1">
             <!-- Latest -->
             <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500">Latest</span>
@@ -91,16 +91,23 @@
             </select>
     
             <!-- Categories -->
-            <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500">Men</span>
-            <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500">Women</span>
-            <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500">Girls</span>
-            <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500">Boys</span>
+            <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500 hidden md:flex">Men</span>
+            <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500 hidden md:flex">Women</span>
+            <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500 hidden md:flex">Girls</span>
+            <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500 hidden md:flex">Boys</span>
+            <select name="category" id="categoryName" class="bg-white border border-gray-300 text-xs text-gray-700 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-purple-500 cursor-pointer flex md:hidden">
+                <option value="Category">Category</option>
+                <option value="men">MEN</option>
+                <option value="women">WOMEN</option>
+                <option value="girls">GIRLS</option>
+                <option value="boys">BOYS</option>
+            </select>
         </div>
     
         <!-- Location -->
-        <div class="location flex justify-center items-center mt-2 md:mt-0 md:absolute md:right-6 sm:hidden md:flex">
+        <div class="location flex justify-center items-center mt-2 md:mt-0 md:absolute md:right-6 hidden md:flex">
             <img src="./image/icons8-location-14.png" alt="location icon" class="h-4 w-4 mr-2">
-            <a href="#" class="text-xs font-medium text-gray-700 hover:text-purple-500">Add Location</a>
+            <a href="#location" class="text-xs font-medium text-gray-700 hover:text-purple-500">Add Location</a>
         </div>
     </section>    
 
