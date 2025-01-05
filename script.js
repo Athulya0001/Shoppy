@@ -50,3 +50,55 @@ nextButton.addEventListener('click', () => {
 window.addEventListener('resize', () => updateCarousel());
 
 startAutoSlide();
+
+// trending collection section
+// Shoe more shoe less button
+
+document.addEventListener('DOMContentLoaded', () => {
+  const grid = document.getElementById('Projects');
+  const button = document.getElementById('toggleButton');
+  const visibleRows = 1;
+  const breakpoints = {
+    xs: 1, // extra small
+    sm: 2, // small screen
+    md: 3, // medium screen
+    lg: 4, // large screen
+    xl: 5, // extra large screen
+  };
+
+  function getItemsPerRow() {
+    const width = window.innerWidth;
+    if (width >= 1280) return breakpoints.xl;
+    if (width >= 1024) return breakpoints.lg;
+    if (width >= 768) return breakpoints.md;
+    if (width >= 640) return breakpoints.sm;
+    return breakpoints.xs;
+  }
+
+  function updateGrid(showAll = false) {
+    const itemsPerRow = getItemsPerRow();
+    const gridItems = grid.children;
+
+    for (let i = 0; i < gridItems.length; i++) {
+      if (showAll || i < visibleRows * itemsPerRow) {
+        gridItems[i].style.display = 'block';
+      } else {
+        gridItems[i].style.display = 'none';
+      }
+    }
+  }
+
+  updateGrid();
+
+  button.addEventListener('click', () => {
+    const isShowingAll = button.textContent === 'Show Less';
+    updateGrid(!isShowingAll);
+    button.textContent = isShowingAll ? 'Show More' : 'Show Less';
+  });
+
+  window.addEventListener('resize', () => {
+    if (button.textContent === 'Show More') {
+      updateGrid();
+    }
+  });
+});
