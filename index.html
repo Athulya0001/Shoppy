@@ -11,23 +11,28 @@
 
 <body class="bg-gradient-to-r from-pink-300 via-blue-600 via-yellow-600 to-pink-700">
     <!-- Navbar -->
-    <nav class="bg-gradient-to-r from-blue-900 via-yellow-700 via-violet-100 to-purple-500 shadow-lg fixed top-0 w-full z-50">
+    <nav
+        class="bg-gradient-to-r from-blue-900 via-yellow-700 via-violet-100 to-purple-500 shadow-lg fixed top-0 w-full z-50">
         <div class="container mx-auto px-4 py-2 flex justify-between items-center">
             <!-- Logo -->
             <a href="#" class="text-white font-bold text-2xl tracking-wide">
-        Shoppy<span class="text-yellow-300">Hub</span>
+                Shoppy<span class="text-yellow-300">Hub</span>
             </a>
-    
+
             <!-- Menu Items -->
             <div class="menu hidden md:flex space-x-1 text-white font-semibold">
-                <a href="#collection" class="hover:text-yellow-300 transition duration-300 text-xs flex items-center justify-evenly border-r border-white px-2">Home
+                <a href="#collection"
+                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center justify-evenly border-r border-white px-2">Home
                     <img src="./image/icons8-home-26.png" alt="home">
                 </a>
-                <a href="./cart.html" class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2" id="cart" >Cart
+                <a href="./cart.html"
+                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2"
+                    id="cart">Cart
                     <img src="./image/icons8-cart-24 (1).png" alt="cart">
                 </a>
                 <div class="relative group flex justify-center">
-                    <button class="hover:text-yellow-300 transition duration-300 text-xs flex items-center justify-center border-r border-white px-2">Categories
+                    <button
+                        class="hover:text-yellow-300 transition duration-300 text-xs flex items-center justify-center border-r border-white px-2">Categories
                         <img src="./image/icons8-category-28.png" alt="category">
                     </button>
                     <!-- Dropdown -->
@@ -39,17 +44,19 @@
                         <a href="#girls" class="block px-4 py-2 hover:bg-gray-100 text-xs">Girls</a>
                     </div>
                 </div>
-                <a href="#contact" class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2">Contact
+                <a href="#contact"
+                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2">Contact
                     <img src="./image/icons8-contact-us-26.png" alt="cantact">
                 </a>
-                <a href="./login.html" class="hover:text-yellow-300 transition duration-300 text-xs flex items-center px-2">Account
+                <a href="./login.html"
+                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center px-2">Account
                     <img src="./image/icons8-user-32.png" alt="user">
                 </a>
 
             </div>
-    
+
             <!-- Mobile Menu Toggle -->
-            <div class="md:hidden">
+            <div class="flex justify-between items-center space-x-1 md:hidden">
                 <button id="menu-toggle" class="text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                         class="w-6 h-6">
@@ -57,13 +64,14 @@
                             d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </button>
-                <div class="location flex justify-center items-center mt-2 md:mt-0 md:absolute md:right-6 flex md:hidden">
+                <div
+                    class="location flex justify-center items-center mt-1 md:mt-0 md:absolute md:right-6 flex md:hidden">
                     <a href="#location">
-                    <img src="./image/icons8-location-14.png" alt="location icon" class="h-4 w-4 mr-2"></a>
+                        <img src="./image/icons8-location-50.png" alt="location icon" class="h-5 w-6 mr-2"></a>
                 </div>
             </div>
         </div>
-    
+
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
             <a href="#collection" class="block px-4 py-2 text-black hover:bg-gray-100">Home</a>
@@ -78,9 +86,10 @@
         <div class="flex mx-auto justify-evenly md:w-3/5 items-center bg-white sm:w-full py-1">
             <!-- Latest -->
             <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500">Latest</span>
-    
+
             <!-- Brand Dropdown -->
-            <select name="brand" id="brandName" class="bg-white border border-gray-300 text-xs text-gray-700 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-purple-500 cursor-pointer">
+            <select name="brand" id="brandName"
+                class="bg-white border border-gray-300 text-xs text-gray-700 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-purple-500 cursor-pointer">
                 <option value="Brands">Brands</option>
                 <option value="GUCCI">GUCCI</option>
                 <option value="CHANEL">CHANEL</option>
@@ -89,13 +98,18 @@
                 <option value="Balenciaga">Balenciaga</option>
                 <option value="more" class="text-blue-500">More...</option>
             </select>
-    
+
             <!-- Categories -->
-            <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500 hidden md:flex">Men</span>
-            <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500 hidden md:flex">Women</span>
-            <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500 hidden md:flex">Girls</span>
-            <span class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500 hidden md:flex">Boys</span>
-            <select name="category" id="categoryName" class="bg-white border border-gray-300 text-xs text-gray-700 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-purple-500 cursor-pointer flex md:hidden">
+            <span
+                class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500 hidden md:flex">Men</span>
+            <span
+                class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500 hidden md:flex">Women</span>
+            <span
+                class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500 hidden md:flex">Girls</span>
+            <span
+                class="text-xs font-medium text-gray-700 cursor-pointer hover:text-purple-500 hidden md:flex">Boys</span>
+            <select name="category" id="categoryName"
+                class="bg-white border border-gray-300 text-xs text-gray-700 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-purple-500 cursor-pointer flex space-x-1 md:hidden">
                 <option value="Category">Category</option>
                 <option value="men">MEN</option>
                 <option value="women">WOMEN</option>
@@ -103,13 +117,13 @@
                 <option value="boys">BOYS</option>
             </select>
         </div>
-    
+
         <!-- Location -->
         <div class="location flex justify-center items-center mt-2 md:mt-0 md:absolute md:right-6 hidden md:flex">
             <img src="./image/icons8-location-14.png" alt="location icon" class="h-4 w-4 mr-2">
             <a href="#location" class="text-xs font-medium text-gray-700 hover:text-purple-500">Add Location</a>
         </div>
-    </section>    
+    </section>
 
     <!-- Carousel -->
     <section class="my-1">
@@ -152,17 +166,20 @@
     </section>
 
     <!-- Trending Collection section -->
-    <section class="trending-section flex flex-col justify-center items-center mt-4 bg-gradient-to-t from-yellow-500 via-pink-800 to-violet-700">
+    <section
+        class="trending-section flex flex-col justify-center items-center mt-4 bg-gradient-to-t from-yellow-500 via-pink-800 to-violet-700">
         <br>
-        <h2 class="text-3xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-green-200 to-yellow-400">
-          Trending Collections
+        <h2
+            class="text-3xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-green-200 to-yellow-400">
+            Trending Collections
         </h2>
-        
+
         <br>
         <div id="Projects"
             class="w-fit mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-items-center justify-center gap-y-12 gap-x-10 mt-5 mb-5">
-    
-            <div class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+
+            <div
+                class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                 <a href="#">
                     <img src="./image/men9d.jpg" alt="Product" class="h-60 w-52 object-cover rounded-t-xl" />
                     <div class="px-4 py-2 w-52">
@@ -174,7 +191,8 @@
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$199</p>
                             </del>
                             <div class="ml-auto">
-                                <button onclick="addCart(addCart({name: 'Brown Men\'s Outfit', price: 149}))" class="cursor-default">
+                                <button onclick="addCart(addCart({name: 'Brown Men\'s Outfit', price: 149}))"
+                                    class="cursor-default">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
                             </div>
@@ -182,8 +200,9 @@
                     </div>
                 </a>
             </div>
-    
-            <div class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+
+            <div
+                class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                 <a href="#">
                     <img src="./image/women7c.jpg" alt="Product" class="h-60 w-52 object-cover rounded-t-xl" />
                     <div class="px-4 py-2 w-52">
@@ -195,7 +214,8 @@
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$249</p>
                             </del>
                             <div class="ml-auto">
-                                <button onclick="addCart(addCart({name: 'White Women\'s Formals', price: 179}))" class="cursor-default">
+                                <button onclick="addCart(addCart({name: 'White Women\'s Formals', price: 179}))"
+                                    class="cursor-default">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
                             </div>
@@ -203,20 +223,23 @@
                     </div>
                 </a>
             </div>
-    
-            <div class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+
+            <div
+                class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                 <a href="#">
                     <img src="./image/women8d.jpg" alt="Product" class="h-60 w-52 object-cover rounded-t-xl" />
                     <div class="px-4 py-2 w-52">
                         <span class="text-yellow-300 mr-3 uppercase text-xs font-semibold">DIOR</span>
-                        <p class="text-lg font-bold text-white truncate block capitalize">Coffee Brown Women's Casuals</p>
+                        <p class="text-lg font-bold text-white truncate block capitalize">Coffee Brown Women's Casuals
+                        </p>
                         <div class="flex items-center">
                             <p class="text-lg font-semibold text-yellow-300 cursor-auto my-3">$199</p>
                             <del>
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$269</p>
                             </del>
                             <div class="ml-auto">
-                                <button onclick="addCart(addCart({name: 'Coffee Brown Women\'s Casuals', price: 199}))" class="cursor-default">
+                                <button onclick="addCart(addCart({name: 'Coffee Brown Women\'s Casuals', price: 199}))"
+                                    class="cursor-default">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
                             </div>
@@ -224,20 +247,24 @@
                     </div>
                 </a>
             </div>
-    
-            <div class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+
+            <div
+                class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                 <a href="#">
                     <img src="./image/men7g.jpg" alt="Product" class="h-60 w-52 object-cover rounded-t-xl" />
                     <div class="px-4 py-2 w-52">
                         <span class="text-yellow-300 mr-3 uppercase text-xs font-semibold">GUCCI</span>
-                        <p class="text-lg font-bold text-white truncate block capitalize">Men's Casual Outfit | Check Shirt With Blue Jeans</p>
+                        <p class="text-lg font-bold text-white truncate block capitalize">Men's Casual Outfit | Check
+                            Shirt With Blue Jeans</p>
                         <div class="flex items-center">
                             <p class="text-lg font-semibold text-yellow-300 cursor-auto my-3">$129</p>
                             <del>
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$169</p>
                             </del>
                             <div class="ml-auto">
-                                <button onclick="addCart(addCart({name: 'Men\'s Casual Outfit | Check Shirt With Blue Jeans', price: 129}))" class="cursor-default">
+                                <button
+                                    onclick="addCart(addCart({name: 'Men\'s Casual Outfit | Check Shirt With Blue Jeans', price: 129}))"
+                                    class="cursor-default">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
                             </div>
@@ -245,20 +272,24 @@
                     </div>
                 </a>
             </div>
-    
-            <div class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+
+            <div
+                class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                 <a href="#">
                     <img src="./image/girls2D.jpg" alt="Product" class="h-60 w-52 object-cover rounded-t-xl" />
                     <div class="px-4 py-2 w-52">
                         <span class="text-yellow-300 mr-3 uppercase text-xs font-semibold">DIOR</span>
-                        <p class="text-lg font-bold text-white truncate block capitalize">Girl's Winter Mini Frock | Kids</p>
+                        <p class="text-lg font-bold text-white truncate block capitalize">Girl's Winter Mini Frock |
+                            Kids</p>
                         <div class="flex items-center">
                             <p class="text-lg font-semibold text-yellow-300 cursor-auto my-3">$129</p>
                             <del>
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$199</p>
                             </del>
                             <div class="ml-auto">
-                                <button onclick="addCart(addCart({name: 'Girl\'s Winter Mini Frock | Kids', price: 129}))" class="cursor-default">
+                                <button
+                                    onclick="addCart(addCart({name: 'Girl\'s Winter Mini Frock | Kids', price: 129}))"
+                                    class="cursor-default">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
                             </div>
@@ -266,20 +297,24 @@
                     </div>
                 </a>
             </div>
-    
-            <div class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+
+            <div
+                class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                 <a href="#">
                     <img src="./image/boys4D.jpg" alt="Product" class="h-60 w-52 object-cover rounded-t-xl" />
                     <div class="px-4 py-2 w-52">
                         <span class="text-yellow-300 mr-3 uppercase text-xs font-semibold">DIOR</span>
-                        <p class="text-lg font-bold text-white truncate block capitalize">Boy's Blue Denim Outfit | Denim Jacket and Shorts | Kids</p>
+                        <p class="text-lg font-bold text-white truncate block capitalize">Boy's Blue Denim Outfit |
+                            Denim Jacket and Shorts | Kids</p>
                         <div class="flex items-center">
                             <p class="text-lg font-semibold text-yellow-300 cursor-auto my-3">$149</p>
                             <del>
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$199</p>
                             </del>
                             <div class="ml-auto">
-                                <button onclick="addCart(addCart({name: 'Boy\'s Blue Denim Outfit | Denim Jacket and Shorts', price: 149}))" class="cursor-default">
+                                <button
+                                    onclick="addCart(addCart({name: 'Boy\'s Blue Denim Outfit | Denim Jacket and Shorts', price: 149}))"
+                                    class="cursor-default">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
                             </div>
@@ -287,19 +322,23 @@
                     </div>
                 </a>
             </div>
-            <div class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <div
+                class="w-52 bg-gradient-to-b from-purple-900 via-purple-800 to-purple-700 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                 <a href="#">
-                    <img src="./image/girls-collection.webp" alt="Product" class="h-60 w-52 object-cover rounded-t-xl" />
+                    <img src="./image/girls-collection.webp" alt="Product"
+                        class="h-60 w-52 object-cover rounded-t-xl" />
                     <div class="px-4 py-2 w-52">
                         <span class="text-yellow-300 mr-3 uppercase text-xs font-semibold">GUCCI</span>
-                        <p class="text-lg font-bold text-white truncate block capitalize">Girl's Baby Blue Frock | Kids</p>
+                        <p class="text-lg font-bold text-white truncate block capitalize">Girl's Baby Blue Frock | Kids
+                        </p>
                         <div class="flex items-center">
                             <p class="text-lg font-semibold text-yellow-300 cursor-auto my-3">$169</p>
                             <del>
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$229</p>
                             </del>
                             <div class="ml-auto">
-                                <button onclick="addCart(addCart({name: 'Girl\'s Baby Blue Frock | Kids', price: 169}))" class="cursor-default">
+                                <button onclick="addCart(addCart({name: 'Girl\'s Baby Blue Frock | Kids', price: 169}))"
+                                    class="cursor-default">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
                             </div>
@@ -307,7 +346,7 @@
                     </div>
                 </a>
             </div>
-    
+
         </div>
         <button id="toggleButton" class="text-blue-500 text-sm hover:underline flex items-center mt-4">
             Show More
@@ -316,7 +355,8 @@
 
     <!-- Return and delivery section -->
     <section class=" bg-yellow-200 flex flex-col justify-center items-center">
-        <hr class="w-[80vw] h-[3px] mx-auto my-3 mt-6 bg-gradient-to-r from-blue-800 via-yellow-700 via-green-200 to-pink-500">
+        <hr
+            class="w-[80vw] h-[3px] mx-auto my-3 mt-6 bg-gradient-to-r from-blue-800 via-yellow-700 via-green-200 to-pink-500">
         <div class="return flex justify-between items-center space-x-12 items-center py-2">
             <div class="flex flex-col justify-center items-center">
                 <img src="./image/icons8-delivery-truck-26.png" alt="box">
@@ -327,28 +367,27 @@
                 <span class="text-xs">30DAYS RETURN & EXCHANGE</span>
             </div>
         </div>
-        <hr class="w-[80vw] h-[3px] mx-auto my-3 mt-3 bg-gradient-to-r from-blue-800 via-yellow-700 via-green-200 to-pink-500">
- 
+        <hr
+            class="w-[80vw] h-[3px] mx-auto my-3 mt-3 bg-gradient-to-r from-blue-800 via-yellow-700 via-green-200 to-pink-500">
+
     </section>
 
     <!-- Footer  Section-->
     <footer class="w-full bg-gradient-to-t from-violet-700 via-purple-800 to-purple-900 py-3">
-        <div class="flex justify-between items-center w-full max-w-screen-xl mx-auto px-4">
+        <div class="hidden md:flex justify-between items-center w-full max-w-screen-xl mx-auto px-4">
             <!-- Copyright Text -->
             <div class="text-left">
                 <p class="text-white text-sm">&copy; 2025 Trending Collections. All rights reserved.</p>
             </div>
-    
+
             <!-- Links and Social Media Icons -->
             <div class="flex items-center space-x-6">
-                <!-- Privacy Policy and Terms -->
                 <div class="flex space-x-4">
                     <a href="#" class="text-yellow-300 hover:text-yellow-400 text-sm">Privacy Policy</a>
                     <span class="text-white">|</span>
                     <a href="#" class="text-yellow-300 hover:text-yellow-400 text-sm">Terms of Service</a>
                 </div>
-    
-                <!-- Social Media Icons (Contact Us) -->
+
                 <div class="flex space-x-4">
                     <a href="#" class="hover:scale-110 duration-300" title="Contact us on Facebook">
                         <img src="./image/icons8-facebook-30.png" alt="facebook" class="h-6 w-6">
@@ -360,6 +399,17 @@
                         <img src="./image/icons8-twitter-30.png" alt="twitter" class="h-6 w-6">
                     </a>
                 </div>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center md:hidden mx-w-screen w-full px-4">
+            <div class="text-center">
+                <p class="text-white text-sm">&copy; 2025 Trending Collections. All rights reserved.</p>
+            </div>
+            <hr class="w-[70vw] h-2 my-3">
+            <div class="flex space-x-2 text-center">
+                <a href="#" class="text-yellow-300 hover:text-yellow-400 text-sm">Privacy Policy</a>
+                <span class="text-white">|</span>
+                <a href="#" class="text-yellow-300 hover:text-yellow-400 text-sm">Terms of Service</a>
             </div>
         </div>
     </footer>
