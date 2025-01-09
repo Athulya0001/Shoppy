@@ -123,4 +123,12 @@ function addCart(product) {
 
   // Save updated cart items to localStorage
   localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  console.log("Product added to cart:", product);
+  console.log("Updated cart items:", cartItems);
+  console.log(JSON.parse(localStorage.getItem('cartItems')),"cartItems");
+
+  //   localStorage.setItem('cartItems', JSON.stringify([
+//     { name: 'Product 1', price: 10.99, quantity: 2 },
+//     { name: 'Product 2', price: 20.00, quantity: 1 }
+// ]));
 }
