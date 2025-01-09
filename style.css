@@ -1,3 +1,17 @@
+.primary {
+    background-color: #2F3C7E;
+    color: white;
+}
+
+.secondary {
+    background-color: #FBEAEB;
+    color: #2F3C7E;
+}
+
+.tertiary {
+    color: #08165d;
+}
+
 .menu img {
     width: 16px;
     height: 16px;
