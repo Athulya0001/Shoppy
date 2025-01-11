@@ -9,27 +9,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100">
-    <nav class="bg-gradient-to-r from-blue-900 via-yellow-700 via-violet-100 to-purple-500 shadow-lg fixed top-0 w-full z-50">
+<body style="background-color: aliceblue;">
+    <nav
+        class="primary shadow-lg fixed top-0 w-full z-50">
         <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-            <a href="#" class="text-white font-bold text-2xl tracking-wide">
-        Shoppy<span class="text-yellow-300">Hub</span>
+            <!-- Logo -->
+            <a href="#" class="font-bold text-2xl tracking-wide">
+                Shoppy<span class="text-yellow-300">Hub</span>
             </a>
-    
-            <div class="menu hidden md:flex space-x-1 text-white font-semibold">
-                <a href="./index.html" class="hover:text-yellow-300 transition duration-300 text-xs flex items-center justify-evenly border-r border-white px-2">Home
+
+            <!-- Menu Items -->
+            <div class="menu hidden md:flex space-x-1 font-semibold">
+                <a href="/index.html"
+                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center justify-evenly border-r border-white px-2">Home
                     <img src="./image/icons8-home-26.png" alt="home">
                 </a>
-                <a href="#contact" class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2">Contact
+                <a href="#contact"
+                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2">Contact
                     <img src="./image/icons8-contact-us-26.png" alt="cantact">
                 </a>
-                <a href="#account" class="hover:text-yellow-300 transition duration-300 text-xs flex items-center px-2">Account
+                <a href="./login.html"
+                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center px-2">Account
                     <img src="./image/icons8-user-32.png" alt="user">
                 </a>
 
             </div>
-    
-            <div class="md:hidden">
+
+            <!-- Mobile Menu Toggle -->
+            <div class="flex justify-between items-center space-x-1 md:hidden">
                 <button id="menu-toggle" class="text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                         class="w-6 h-6">
@@ -37,17 +44,19 @@
                             d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </button>
-                <div class="location flex justify-center items-center mt-2 md:mt-0 md:absolute md:right-6 flex md:hidden">
+                <div
+                    class="location flex justify-center items-center mt-1 md:mt-0 md:absolute md:right-6 flex md:hidden">
                     <a href="#location">
-                    <img src="./image/icons8-location-14.png" alt="location icon" class="h-4 w-4 mr-2"></a>
+                        <img src="./image/icons8-location-50.png" alt="location icon" class="h-5 w-6 mr-2"></a>
                 </div>
             </div>
         </div>
-    
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
-            <a href="./index.html" class="block px-4 py-2 text-black hover:bg-gray-100">Home</a>
-            <a href="#contact" class="block px-4 py-2 text-black hover:bg-gray-100">Contact</a>
-            <a href="#account" class="block px-4 py-2 text-black hover:bg-gray-100">Account</a>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden primary">
+            <a href="/index.html" class="block px-4 py-2">Home</a>
+            <a href="#contact" class="block px-4 py-2">Contact</a>
+            <a href="./login.html" class="block px-4 py-2">Account</a>
         </div>
     </nav>
 
@@ -69,6 +78,7 @@
     </section>
 
     <script src="cart.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

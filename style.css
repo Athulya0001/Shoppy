@@ -9,7 +9,17 @@
 }
 
 .tertiary {
+    background-color: aliceblue;
     color: #08165d;
+}
+
+.tertiary:hover {
+    color: #2d44ba;
+}
+
+.txt {
+    color: aliceblue;
+    text-shadow: 1px 1px 1px #08165d;
 }
 
 .menu img {
