@@ -2,7 +2,9 @@
     background-color: #2F3C7E;
     color: white;
 }
-
+.point{
+    cursor: default;
+}
 .secondary {
     background-color: #FBEAEB;
     color: #2F3C7E;
