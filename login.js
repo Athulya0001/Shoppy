@@ -1,17 +1,23 @@
-const userName = document.getElementById("username");
-      const password = document.getElementById("password");
+    const loginForm = document.getElementById('loginForm');
 
-      function handleSubmit() {
-        const userInput = userName.value.trim();
-        const passwordInput = password.value.trim();
+// Handle login
+loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const username = document.getElementById('loginUsername').value;
+    const password = document.getElementById('loginPassword').value;
 
-        if(userInput!==''&& password!==''){
-            localStorage.setItem("username", userInput);
-            localStorage.setItem("password", passwordInput);
+    const users = JSON.parse(localStorage.getItem('users')) || [];
 
-            console.log(userInput, "user")
-            console.log(passwordInput, "password")
-        }else{
-            alert("Please enter a valid username and password")
-        }
-      }
+    const user = users.find(user => user.username === username && user.password === password);
+
+    if (user) {
+      
+        alert('Login successful! Redirecting to home page...');
+        window.location.href = 'index.html';
+         // Replace with your home page
+        const account = document.getElementById('account');
+      account.innerText = "Account";
+    } else {
+        alert('Invalid username or password.');
+    }
+});

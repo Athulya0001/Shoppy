@@ -22,16 +22,20 @@
             <!-- Menu Items -->
             <div class="menu hidden md:flex space-x-1 font-semibold">
                 <a href="#collection"
-                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center justify-evenly border-r border-white px-2">Home
+                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center justify-evenly border-r border-white px-2">
                     <img src="./image/icons8-home-26.png" alt="home">
                 </a>
                 <a href="./cart.html"
                     class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2 relative"
-                    id="cart">Cart
+                    id="cart">
                     <img src="./image/icons8-cart-24 (1).png" alt="cart">
                     <span id="cart-item-count" class="bg-red-500 text-white text-xs rounded-full px-2 py-1 absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2">
                         0 
                     </span>
+                </a>
+                <a href="#contact"
+                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2">
+                    <img src="./image/icons8-contact-us-26.png" alt="cantact">
                 </a>
                 <div class="relative group flex justify-center">
                     <button
@@ -47,13 +51,9 @@
                         <a href="#girls" class="block px-4 py-2 hover:bg-gray-100 text-xs">Girls</a>
                     </div>
                 </div>
-                <a href="#contact"
-                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2">Contact
-                    <img src="./image/icons8-contact-us-26.png" alt="cantact">
-                </a>
                 <a href="./login.html"
-                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center px-2">Account
-                    <img src="./image/icons8-user-32.png" alt="user">
+                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center px-2" id="account">
+                    <img src="./image/icons8-user-32.png" alt="user" id="signin">
                 </a>
 
             </div>
@@ -432,6 +432,7 @@
     <!-- Script link -->
     <script src="script.js"></script>
     <script src="cart.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>

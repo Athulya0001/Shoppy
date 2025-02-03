@@ -4,6 +4,8 @@ function loadCart() {
     const cartSummary = document.getElementById('cartSummary');
     const emptyCartMessage = document.getElementById('emptyCartMessage');
     const totalPriceElement = document.getElementById('totalPrice');
+    const quantityElement = document.getElementById('quantity');
+  const priceElement = document.getElementById('price');
 
     cartItemsContainer.innerHTML = ''; 
 
@@ -17,10 +19,14 @@ function loadCart() {
     cartSummary.classList.remove('hidden');
 
     let totalPrice = 0;
+    let totalQuantity = 0;
+
 
     cartItems.forEach((item, index) => {
         const itemTotal = item.price * item.quantity;
         totalPrice += itemTotal;
+        totalQuantity += item.quantity;
+
 
         const cartItem = document.createElement('div');
         cartItem.classList.add('flex', 'justify-between', 'items-center', 'py-2', 'border-b', 'border-gray-200');
@@ -51,6 +57,8 @@ function loadCart() {
     });
 
     totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+    quantityElement.textContent = `${totalQuantity}`
+    priceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
 }
 
 function removeItem(index) {

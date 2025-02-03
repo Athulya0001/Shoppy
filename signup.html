@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - ShoppyHub</title>
+    <title>Signup - ShoppyHub</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -68,10 +68,10 @@
         class="bg-white p-5 rounded-lg shadow-lg w-full max-w-[90vw] md:max-w-[40vw]"
       >
         <h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">
-          Login to Your Account
+          Sign Up
         </h2>
 
-        <form id="loginForm">
+        <form id="signupForm">
           <div class="mb-4">
             <label
               for="username"
@@ -80,7 +80,7 @@
             >
             <input
               type="text"
-              id="loginUsername"
+              id="signupUsername"
               name="username"
               placeholder="Username"
               required
@@ -96,7 +96,7 @@
             >
             <input
               type="password"
-              id="loginPassword"
+              id="signupPassword"
               name="password"
               placeholder="Password"
               required
@@ -108,20 +108,19 @@
             type="submit"
             class="w-full bg-gradient-to-r from-blue-900 to-purple-500 text-white font-semibold py-1 px-4 rounded-lg hover:bg-yellow-300 transition duration-300"
           >
-            Login
+            Signup
           </button>
         </form>
 
         <div class="mt-4 text-center">
           <p class="text-sm text-gray-600">
-            Don't have an account?
-            <a href="/signup.html" class="text-yellow-300 hover:underline">Sign up</a>
+            Already have an account?
+            <a href="#" class="text-yellow-300 hover:underline">Login</a>
           </p>
         </div>
       </div>
     </div>
 
-    <script src="login.js"></script>
-    
+    <script src="signup.js"></script>
   </body>
 </html>

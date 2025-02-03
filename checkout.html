@@ -22,13 +22,13 @@
           <a
             href="/index.html"
             class="hover:text-yellow-300 transition duration-300 text-xs flex items-center justify-evenly border-r border-white px-2"
-            >Home
+            >
             <img src="./image/icons8-home-26.png" alt="home" />
           </a>
           <a
             href="#contact"
             class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2"
-            >Contact
+            >
             <img src="./image/icons8-contact-us-26.png" alt="cantact" />
           </a>
           <a
@@ -77,7 +77,7 @@
         <a href="./login.html" class="block px-4 py-2">Account</a>
       </div>
     </nav>
-    <div class="flex justify-center items-center px-3 mt-[65px]">
+    <div class="flex flex-col justify-center items-center px-3 mt-[65px]">
       <div
         class="bg-white p-5 rounded-lg shadow-lg w-full max-w-[90vw] md:max-w-[40vw]"
       >
@@ -85,19 +85,33 @@
           Are You Checking Out?
         </h2>
 
-        <div class="mb-4">
-          <span class="text-lg">Total Quantity</span>
-          <span class="text-lg" id="quantity"></span>
+        <div class="mb-4 flex justify-between gap-x-5 items-center">
+          <span class="text-lg ml-3">Total Quantity</span>
+          <span class="text-lg mr-3" id="quantity"></span>
         </div>
-        <div class="mb-4">
-            <span class="text-lg">Shipping Charge</span>
-            <span class="text-lg">$16</span>
+        <div class="mb-4 flex justify-between gap-x-5 items-center">
+            <span class="text-lg ml-3">Shipping Charge</span>
+            <span class="text-lg mr-3">$16</span>
           </div>
-          <div class="mb-4">
-            <span class="text-lg">Total Price</span>
-            <span class="text-lg" id="price"></span>
+          <div class="mb-4 flex justify-between gap-x-5 items-center">
+            <span class="text-lg ml-3">Total Price</span>
+            <span class="text-lg mr-3" id="price"></span>
           </div>
+          <button
+            type="submit"
+            class="w-full bg-gradient-to-r from-blue-900 to-purple-500 text-white font-semibold py-1 px-4 rounded-lg hover:bg-yellow-300 transition duration-300"
+          >
+            Buy now
+          </button>
+      </div>
+      <div class="mt-4 text-center">
+        <p class="text-sm text-gray-600">
+          <a href="/cart.html" class="text-yellow-300 hover:underline">Go to Cart</a>
+        </p>
       </div>
     </div>
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
