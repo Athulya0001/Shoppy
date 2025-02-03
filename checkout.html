@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="primary shadow-lg fixed top-0 w-full z-50">
+      <div
+        class="container mx-auto px-4 py-2 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a href="/" class="font-bold text-2xl tracking-wide">
+          Shoppy<span class="text-yellow-300">Hub</span>
+        </a>
+
+        <!-- Menu Items -->
+        <div class="menu hidden md:flex space-x-1 font-semibold">
+          <a
+            href="/index.html"
+            class="hover:text-yellow-300 transition duration-300 text-xs flex items-center justify-evenly border-r border-white px-2"
+            >Home
+            <img src="./image/icons8-home-26.png" alt="home" />
+          </a>
+          <a
+            href="#contact"
+            class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2"
+            >Contact
+            <img src="./image/icons8-contact-us-26.png" alt="cantact" />
+          </a>
+          <a
+            href="./login.html"
+            class="hover:text-yellow-300 transition duration-300 text-xs flex items-center px-2"
+            >Account
+            <img src="./image/icons8-user-32.png" alt="user" />
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="flex justify-between items-center space-x-1 md:hidden">
+          <button id="menu-toggle" class="text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+          <div
+            class="location flex justify-center items-center mt-1 md:mt-0 md:absolute md:right-6 flex md:hidden"
+          >
+            <a href="#location">
+              <img
+                src="./image/icons8-location-50.png"
+                alt="location icon"
+                class="h-5 w-6 mr-2"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden primary">
+        <a href="/index.html" class="block px-4 py-2">Home</a>
+        <a href="#contact" class="block px-4 py-2">Contact</a>
+        <a href="./login.html" class="block px-4 py-2">Account</a>
+      </div>
+    </nav>
+    <div class="flex justify-center items-center px-3 mt-[65px]">
+      <div
+        class="bg-white p-5 rounded-lg shadow-lg w-full max-w-[90vw] md:max-w-[40vw]"
+      >
+        <h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">
+          Are You Checking Out?
+        </h2>
+
+        <div class="mb-4">
+          <span class="text-lg">Total Quantity</span>
+          <span class="text-lg"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
