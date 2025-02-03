@@ -15,7 +15,7 @@
         class="primary shadow-lg fixed top-0 w-full z-50">
         <div class="container mx-auto px-4 py-2 flex justify-between items-center">
             <!-- Logo -->
-            <a href="#" class="font-bold text-2xl tracking-wide">
+            <a href="/" class="font-bold text-2xl tracking-wide">
                 Shoppy<span class="text-yellow-300">Hub</span>
             </a>
 
@@ -26,9 +26,12 @@
                     <img src="./image/icons8-home-26.png" alt="home">
                 </a>
                 <a href="./cart.html"
-                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2"
+                    class="hover:text-yellow-300 transition duration-300 text-xs flex items-center border-r border-white px-2 relative"
                     id="cart">Cart
                     <img src="./image/icons8-cart-24 (1).png" alt="cart">
+                    <span id="cart-item-count" class="bg-red-500 text-white text-xs rounded-full px-2 py-1 absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2">
+                        0 
+                    </span>
                 </a>
                 <div class="relative group flex justify-center">
                     <button
@@ -190,10 +193,12 @@
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$199</p>
                             </del>
                             <div class="ml-auto">
-                                <button onclick="addCart({name: 'Brown Men\'s Outfit', price: 149, id: Date.now()})"
+                                <a href="/cart.html">
+                                    <button onclick="addCart({name: 'Brown Men\'s Outfit', price: 149, id: Date.now()})"
                                     class="cursor-pointer">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -213,10 +218,10 @@
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$249</p>
                             </del>
                             <div class="ml-auto">
-                                <button onclick="addCart({name: 'White Women\'s Formals', price: 179, id: Date.now()})"
+                                <a href="/cart.html"><button onclick="addCart({name: 'White Women\'s Formals', price: 179, id: Date.now()})"
                                     class="cursor-pointer">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
-                                </button>
+                                </button></a>
                             </div>
                         </div>
                     </div>
@@ -237,10 +242,12 @@
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$269</p>
                             </del>
                             <div class="ml-auto">
-                                <button onclick="addCart({name: 'Coffee Brown Women\'s Casuals', price: 199, id: Date.now()})"
+                                <a href="/cart.html">
+                                    <button onclick="addCart({name: 'Coffee Brown Women\'s Casuals', price: 199, id: Date.now()})"
                                     class="cursor-pointer">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -261,11 +268,13 @@
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$169</p>
                             </del>
                             <div class="ml-auto">
-                                <button
+                                <a href="/cart.html">
+                                    <button
                                     onclick="addCart({name: 'Men\'s Casual Outfit | Check Shirt With Blue Jeans', price: 129, id:Date.now()})"
                                     class="cursor-pointer">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -286,11 +295,13 @@
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$199</p>
                             </del>
                             <div class="ml-auto">
-                                <button
+                                <a href="/cart.html">
+                                    <button
                                     onclick="addCart({name: 'Girl\'s Winter Mini Frock | Kids', price: 129, id: Date.now()})"
                                     class="cursor-pointer">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -311,11 +322,13 @@
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$199</p>
                             </del>
                             <div class="ml-auto">
-                                <button
+                                <a href="/cart.html">
+                                    <button
                                     onclick="addCart({name: 'Boy\'s Blue Denim Outfit | Denim Jacket and Shorts', price: 149, id : Date.now()})"
                                     class="cursor-pointer">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -337,10 +350,12 @@
                                 <p class="text-sm text-gray-400 cursor-auto ml-2">$229</p>
                             </del>
                             <div class="ml-auto">
-                                <button onclick="addCart({name: 'Girl\'s Baby Blue Frock | Kids', price: 169, id : Date.now()})"
+                                <a href="/cart.html">
+                                    <button onclick="addCart({name: 'Girl\'s Baby Blue Frock | Kids', price: 169, id : Date.now()})"
                                     class="cursor-pointer">
                                     <img src="./image/icons8-add-shopping-cart-26.png" alt="">
                                 </button>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -127,8 +127,8 @@ function addCart(product) {
   console.log("Updated cart items:", cartItems);
   console.log(JSON.parse(localStorage.getItem('cartItems')),"cartItems");
 
-  //   localStorage.setItem('cartItems', JSON.stringify([
-//     { name: 'Product 1', price: 10.99, quantity: 2 },
-//     { name: 'Product 2', price: 20.00, quantity: 1 }
-// ]));
 }
+
+const cartItemsCount = JSON.parse(localStorage.getItem('cartItems') || '[]')
+console.log(typeof cartItemsCount)
+document.getElementById('cart-item-count').innerText = cartItemsCount.length;
