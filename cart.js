@@ -4,8 +4,6 @@ function loadCart() {
     const cartSummary = document.getElementById('cartSummary');
     const emptyCartMessage = document.getElementById('emptyCartMessage');
     const totalPriceElement = document.getElementById('totalPrice');
-    const quantityElement = document.getElementById('quantity');
-  const priceElement = document.getElementById('price');
 
     cartItemsContainer.innerHTML = ''; 
 
@@ -47,13 +45,23 @@ function loadCart() {
             <div>
                 <button class="bg-red-500 text-white px-2 py-1 rounded-lg hover:bg-red-600 transition"
                     onclick="removeItem(${index})">Remove</button>
-                    <button id="checkoutButton"
-                class="bg-blue-400 text-white px-2 py-1 rounded-lg hover:bg-blue-600 transition">Buy Now
-                </button>
+                    <button id="checkoutButton-${index}"
+                class="bg-blue-400 text-white px-2 py-1 rounded-lg hover:bg-blue-600 transition">
+                Buy Now
+            </button>
             </div>
             </div>
         `;
+
         cartItemsContainer.appendChild(cartItem);
+        setTimeout(() => {
+            document.getElementById(`checkoutButton-${index}`).addEventListener("click", handlePayment);
+        }, 0);
+        
+        function handlePayment() {
+            localStorage.removeItem("cartItems"); 
+            window.location.href = "/payment.html"; 
+        }
     });
 
     totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
